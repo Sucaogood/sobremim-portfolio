@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  color: white;
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("https://i.imgur.com/CUU8yYp.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 20px 60px;
+}
+
+.hero-content {
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+}
+
+.avatar {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 15%;
+  border: 4px solid #00f2ff;
+  box-shadow: 0 0 25px rgba(0, 242, 255, 0.7);
+}
+
+/* GLASS SECTIONS */
+.glass {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.glass h2 {
+  margin-bottom: 15px;
+  color: #00f2ff;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills span {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: rgba(0,242,255,0.2);
+  border: 1px solid #00f2ff;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  opacity: 0.6;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .avatar {
+    width: 120px;
+  }
+
+  .glass {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .avatar {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.experience-list {
+  list-style: none;
+  margin-top: 20px;
+  display: grid;
+  gap: 14px;
+}
+
+.experience-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 242, 255, 0.25);
+  transition: all 0.3s ease;
+}
+
+.experience-list li:hover {
+  transform: translateY(-4px);
+  background: rgba(0, 242, 255, 0.08);
+  box-shadow: 0 0 18px rgba(0, 242, 255, 0.35);
+}
+
+.experience-list .icon {
+  font-size: 22px;
+  min-width: 28px;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #060b12;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.hire {
+  text-align: center;
+}
+
+.hire p {
+  margin: 10px 0 20px;
+  color: #ccc;
+}
+
+.hire-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn.whatsapp {
+  background: #25D366;
+  color: #000;
+}
+
+.btn.email {
+  background: #4f46e5;
+  color: #fff;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
